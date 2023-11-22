@@ -1,9 +1,10 @@
- key: "createElements",
+{
+key: "createElements",
                                         value: function () {
                                             var e = document.createElement("span");
                                             (e.className = this.options.dragElementSelector.replace(".", "")), this.element.appendChild(e);
                                             
-                                            //Modification to work with imagify. The if else statement will check for img or picture tag in order to use the before after.
+                                            //Modification to work with imagify. The if else statement will check for img or picture tag in order to use the before after slide feature
                                             if ( n =="img:first-child"){                                    
                                                 var t = document.createElement("div"),
                                                 n = this.element.querySelector("img:first-child");
